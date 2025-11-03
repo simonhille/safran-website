@@ -2,10 +2,11 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+    <meta name="HandheldFriendly" content="True">
     <title>Safran - Indisches Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Simon H. Hille">
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -32,17 +33,17 @@
             <img id="logo" src="./figs/logo_saff.png" alt="logo">
             <ul>
                 <li>
-                    <a href="#Willkommen">Öffnungszeiten</a>
+                    <a class="no-url-change" data-target="Öffnungszeiten">Öffnungszeiten</a>
                 </li>
                 <li>
-                    <a href="#Speisen">Speisen</a>
+                    <a class="no-url-change" data-target="Speisen">Speisen</a>
                 </li>
                 <li>
-                    <a href="#Catering">Catering</a>
+                    <a class="no-url-change" data-target="Catering">Catering</a>
                 </li>
             </ul>
         </nav>
-        <section id="Willkommen" class="section_welcome">
+        <section id="Öffnungszeiten">
 
             <div class="header_of_section">
                 <h2> Saffran - Indisches Resturant in Köln-Dellbrück: </h2>
@@ -51,16 +52,15 @@
 
             <div class="image_of_section">
                 <div id="kontakt-box">
-                    <p>Bestellen Sie jetzt oder reservieren Sie einen Tisch:
-                    <div id="phone-number"><strong>0221 - 2412312241</strong></div>
-                    <br>
-                    <div id="phone-number"><strong>0152 - 18909825</strong></div>
+                    <p>Bestellen Sie jetzt oder reservieren Sie einen Tisch:</p>
+                    <div class="phone-number"><strong>0221 - 2412312241</strong></div>
+                    <div class="phone-number"><strong>0152 - 18909825</strong></div>
                 </div>
-            
-            </div class="text_of_section">
-                <div>
+            </div>
+
+            <div class="text_of_section">
                 <div id="opening_hours"> 
-                    <div class = small_headlines><u> Öffnungszeiten </u></div>
+                    <div class = "small_headlines"><u> 🕑 Öffnungszeiten </u></div>
                     <ul>
                         <li><span class="tag">• Mo – Fr:</span><span class="zeit">11:00 – 22:00</span></li>
                         <li><span class="tag">• Sa:</span><span class="zeit">11:00 – 22:00</span></li>
@@ -68,21 +68,21 @@
                     </ul>
                 </div>
                 <div id="happy_hour">  
-                    <div class = small_headlines><u> Happy Hour / Mittagstisch von 12:00 bis 15:00 Uhr </u></div>
+                    <div class = "small_headlines"><u> 🎉 Happy Hour / Mittagstisch von 12:00 bis 15:00 Uhr </u></div>
                     <ul>
-                        <li>Vegetarische Gerichte: 8,90 €
-                        <li>Huhn + Kartoffeln in Currysauce: 10,90 €
-                        <li>Lamm + Kartoffeln in Currysauce: 11,90 €
+                        <li>Vegetarische Gerichte: 8,90 €</li>
+                        <li>Huhn + Kartoffeln in Currysauce: 10,90 €</li>
+                        <li>Lamm + Kartoffeln in Currysauce: 11,90 €</li>
                     </ul>
                 </div>
-                <div class = small_headlines><u> 🚗 Lieferung in der Nähe von Köln-Dellbrück </u></div>
+                <div class = "small_headlines"><u> 🚗 Lieferung in der Nähe von Köln-Dellbrück </u></div>
                 Wir liefern in Köln-Dellbrück und der näheren Umgebung.
-                <div id="opening_hours"> 
-                    <div class = small_headlines><u> Lieferzeiten </u></div>
+                <div id="delivery_hours"> 
+                    <div class = "small_headlines"><u> Lieferzeiten </u></div>
                     <ul>
-                        <li><span class="tag">• Mo – Fr:</span><span class="zeit">11:00 – 22:00</span></li>
-                        <li><span class="tag">• Sa:</span><span class="zeit">11:00 – 22:00</span></li>
-                        <li><span class="tag">• So:</span><span class="zeit">11:00 – 22:00</span></li>
+                        <li><span class="tag">• Mo – Fr:</span><span class="zeit">13:00 – 22:00</span></li>
+                        <li><span class="tag">• Sa:</span><span class="zeit">13:00 – 22:00</span></li>
+                        <li><span class="tag">• So:</span><span class="zeit">13:00 – 22:00</span></li>
                     </ul>
                 </div>
             </div>
@@ -93,21 +93,18 @@
             </div>
         </section>
 
-        <section id="Speisen" class="section_menu">
-            <div> 
+        <section id="Speisen">
+            <div class="text_of_section">
                 <h2> 
                     Speisen: 
                 </h2>
                 <div> 
-                    Hier finden sie unsere Speisekarte: 
+                    Hier finden Sie unsere Speisekarte: 
                 </div>
                 <div> 
                     Entdecken Sie die Vielfalt und Lebendigkeit der indischen Küche.
                     Unsere Spezialitäten sind Gerichte aus dem Tandoori Ofen und Fisch.
-                    <br>
-                    Der Tandoori-Ofen ist ein traditioneller indischer Lehmofen, der mit hoher Hitze arbeitet 
-                    und Speisen besonders zart und aromatisch zubereitet.
-                    Frisch in dem Tandoori Ofen gebackenen Naan-Brote sind die Perfekte ergänzung zu jedem Curry.
+                    Seit neuestem bieten wir auch Naan Pizzen an!
                 </div>
             </div>
             <div class="image_of_section">
@@ -115,10 +112,10 @@
             </div>
         </section>
 
-        <section id="Catering" class="section_catering">
-            <div> 
+        <section id="Catering">
+            <div class="text_of_section">
                 <h2> Catering: </h2>
-                <div> Kontaktieren sie uns gerne per Mail: info@saffran-restaurant.com </div>
+                <div> Kontaktieren Sie uns gerne per Mail: info@saffran-restaurant.com </div>
                 <div> Ob Hochzeit, Geburtstagsfeier oder Betriebsfest – mit unserem Catering bringen wir 
                     echte indische Küche direkt zu dir!
                 </div>
@@ -140,5 +137,6 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/jump_to.js"></script>
 </body>
 </html>

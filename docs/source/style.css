@@ -66,14 +66,23 @@ nav a{
     color: black;
     text-decoration: none;
     padding: 1rem 2rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
-nav a:hover{
-    background-color: #ffba53;
+@media (hover: hover) and (pointer: fine) {
+    nav a:hover {
+        background-color: #ffba53;
+        text-decoration: underline;
+    }
 }
 
-/* ################################ */
-
+nav a.clicked {
+    background-color: #ffba53 !important;
+    text-decoration: underline !important;
+    border-radius: 0.5rem !important;
+}
 
 /* SECTION STYLES */
 /* ################################ */
@@ -116,7 +125,6 @@ section{
     grid-area: footer;
 }
 
-
 section div{
     font-size: 25px;
     grid-area: text;
@@ -125,27 +133,23 @@ section div{
     padding: 1rem 0rem;
 }
 
-.section_welcome{
-    align-items: center;
-}
+/* Class settings */
+/* ############## */
 
 .small_headlines{
     padding: 0 0 10px;
 }
 
-.section_menu{
-    grid-area: menu;
-    align-items: center;
+.phone-number{
+    margin: 0em 0em;
+    font-size: 40px;
 }
 
-.section_catering{
-    grid-area: catering;
-    align-items: center;
-}
+/* Item settings */
+/* ############## */
 
-/*First section box*/
-
-#opening_hours li{
+#opening_hours li,
+#delivery_hours li {
     display: grid;
     padding: 0.2em 0em;
     grid-template-columns: 200px auto;
@@ -171,23 +175,9 @@ section div{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 
-#phone-number{
-    margin: 0em 0em;
-    font-size: 40px;
-}
-
-/* Links */
-.legal-content a {
-    color: #ec9a1f;
-    text-decoration: none;
-}
-
-.legal-content a:hover {
-    color: #ff9900;
-    text-decoration: underline;
-}
-
 /* Footer Styles */
+/* ############# */
+
 .site-footer {
     background-color: #3f5041;
     color: white;
